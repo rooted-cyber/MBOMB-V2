@@ -26,21 +26,24 @@ fi
 if [ -e M ];then
 echo
 else
+cd ~/MBOMB-V2
+pip install -r requiremen*
 echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/M
 echo "cd ~/MBOMB-V2" >> $PREFIX/bin/M
 echo "bash MBOMB.sh" >> $PREFIX/bin/M
 chmod 777 $PREFIX/bin/M
 printf "\n\n Now you can start this command :- M "
 sleep 3
+read
 fi
 clear
 $image TBomb | $rang
 call () {
-	cd ~/MBOMB
+	cd ~/MBOMB-V2
 	python3 .bomb.py call
 	}
 	sms () {
-		cd ~/MBOMB
+		cd ~/MBOMB-V2
 		python3 .bomb.py
 		}
 		MB () {
