@@ -1,12 +1,13 @@
 # MBOMB-V2
+# installation in termux
 
- $ apt update
+<pre> $ apt update
  $ apt upgrade
  $ apt install git
  $ git clone https://github.com/rooted-cyber/MBOMB-V2
  $ cd MBOMB-V2
- $ bash MBOMB.sh
+ $ bash MBOMB.sh </pre>
 
 # usages
 Type anywhere
-M
+<pre>M</pre>
