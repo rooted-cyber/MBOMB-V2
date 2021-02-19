@@ -17,12 +17,13 @@ setup() {
 			cd ~/MBOMB-V2/php
 			}
 		sms() {
-			fol
-			php sms.php
+			#fol
+			python3 ~/.bomb.py
+			#php sms.php
 			}
 			call () {
-				fol
-				php call.php
+				python3 ~/.bomb.py call
+				#php call.php
 				}
 		menu () {
 			banner

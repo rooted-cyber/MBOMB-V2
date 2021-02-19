@@ -30,6 +30,9 @@ setup() {
 	else
 	cd ~/MBOMB-V2/php
 	php package.php
+	apt reinstall python
+	cd ~/MBOMB
+	0pip install -r req*
 	fi
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/M
 	echo "cd ~/MBOMB-V2" >> $PREFIX/bin/M
