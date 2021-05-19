@@ -18,11 +18,11 @@ setup() {
 			}
 		sms() {
 			#fol
-			python3 ~/.bomb.py
+			python3 ~/MBOMB-V2/.bomb.py
 			#php sms.php
 			}
 			call () {
-				python3 ~/.bomb.py call
+				python3 ~/MBOMB-V2/.bomb.py call
 				#php call.php
 				}
 		menu () {
